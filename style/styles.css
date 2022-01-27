@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300;400&display=swap");
+
+/* || Reset and General CSS || */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 100% would be 16 px so now, 1 rem = 10px */
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* || Header CSS ||   */
+
+/* || Body  CSS ||   */
+
+/* || Footer  CSS ||   */
