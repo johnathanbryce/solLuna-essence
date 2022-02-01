@@ -1,0 +1,22 @@
+{
+  "name": "solluna-essence",
+  "version": "1.0.0",
+  "description": "Landing page for solluna essence",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnathanbryce/solLuna-essence.git"
+  },
+  "author": "johnathan bryce",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnathanbryce/solLuna-essence/issues"
+  },
+  "homepage": "https://github.com/johnathanbryce/solLuna-essence#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
