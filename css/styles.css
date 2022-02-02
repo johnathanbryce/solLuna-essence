@@ -90,8 +90,9 @@ body {
   align-items: center; }
 
 .bio__img {
+  border-radius: 50%;
   flex: 2;
-  height: 40rem; }
+  height: 35rem; }
 
 .bio__article {
   flex: 3;
@@ -112,6 +113,45 @@ body {
   padding: 1rem;
   height: 25rem;
   border: 1px solid grey; }
+
+/* || Reviews Section || */
+.owl-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30rem; }
+
+.slide {
+  text-align: center;
+  width: 100%;
+  padding: 10rem;
+  height: 75%; }
+
+.owl-dots {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  position: absolute;
+  bottom: 1%; }
+
+.owl-dot {
+  width: 2rem;
+  height: 5rem; }
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 6rem !important;
+  font-weight: bold; }
+
+.owl-prev {
+  left: 0; }
+
+.owl-next {
+  right: 0; }
 
 .footer {
   padding: 5rem; }

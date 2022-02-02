@@ -18,6 +18,22 @@
     <!-- TODO  add favicon -->
     <link rel="icon" type="image/png" href="https://example.com/favicon.png" />
 
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- Owl Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
+
     <noscript>
       Please enable Javascript in order to run this page fluidly.
     </noscript>
@@ -110,10 +126,25 @@
       <section class="reviews">
         <h2 class="reviews__header">Client Reviews</h2>
 
-        <article class="reviews__container">
-          <h3>Client Reviews</h3>
-          <p>... implement carousel feature</p>
+        <!-- Carousel -->
+        <article class="owl-carousel owl-theme">
+          <div class="slide slide-1">
+            <h4>review 1</h4>
+            <p>lorem ipsum</p>
+          </div>
+
+          <div class="slide slide-2">
+            <h4>review 2</h4>
+            <p>lorem ipsum</p>
+          </div>
+
+            <div class="slide slide-3">
+              <h4>review 3</h4>
+              <p>lorem ipsum</p>
+            </div>
+          </div>
         </article>
+        <!-- end of Carousel -->
       </section>
     </main>
 
@@ -121,5 +152,13 @@
     <footer class="footer">
       <h4>website developed by: johnathan bryce</h4>
     </footer>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl Carousel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+    <script src="scripts/scripts.js"></script>
   </body>
 </html>

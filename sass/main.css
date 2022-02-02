@@ -62,6 +62,17 @@ h3 {
   font-size: 2rem;
 }
 
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
 /* || Header  ||   */
 .header {
   display: flex;
@@ -98,8 +109,9 @@ body {
 }
 
 .bio__img {
+  border-radius: 50%;
   flex: 2;
-  height: 40rem;
+  height: 35rem;
 }
 
 .bio__article {
@@ -131,10 +143,46 @@ body {
 
 .btn {
   text-transform: uppercase;
-  text-decoration: none;
   padding: 1.5rem 2rem;
-  border-radius: 2rem;
+  display: inline-block;
   transition: all 0.2s;
-  position: relative;
   font-size: 1.25rem;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn--white {
+  background-color: white;
+  color: darkgray;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn--animation {
+  animation: moveInBottom 0.5s ease-out 0.25s;
+  animation-fill-mode: backwards;
 }
