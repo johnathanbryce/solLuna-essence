@@ -11,6 +11,8 @@
 html {
   font-size: 62.5%; /* 100% would be 16 px so now 1 rem = 10px */
   scroll-behavior: smooth;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 body {
