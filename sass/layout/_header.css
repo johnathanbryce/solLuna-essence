@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  height: 11rem;
 }
 
 .header__top__fixed {
@@ -11,7 +12,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  background-color: beige;
+  background-color: #fef6e4;
 }
 
 .logo_img {

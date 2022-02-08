@@ -2,21 +2,24 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  margin: 1rem 0 1rem 0;
-  padding: 2rem;
 }
 
 .main {
-  padding-top: 12.5rem;
+  padding-top: 9rem;
 }
 
 /* || Biography Section || */
+.bio__background {
+  background-color: #fef6e4;
+}
+
 .bio {
   display: flex;
   align-items: center;
 }
 
 .bio__img {
+  border-radius: 50%;
   flex: 0.85;
   height: 50rem;
 }
@@ -28,8 +31,23 @@ body {
 }
 
 /* || Services Section || */
+.services__skew__top {
+  height: 5rem;
+  background: linear-gradient(to right bottom, #fef6e4 50%, #f3d2c1 50%);
+}
+
+.services__skew__bottom {
+  height: 5rem;
+  background: linear-gradient(to left bottom, #f3d2c1 50%, #fef6e4 50%);
+}
+
 .services {
   padding: 5rem;
+  background: #f3d2c1;
+}
+
+.services h2 {
+  padding-top: 6rem;
 }
 
 .services__container {
@@ -44,11 +62,29 @@ body {
   justify-content: space-between;
   margin: 2.5rem;
   padding: 1.5rem;
-  height: 30rem;
+  height: 40rem;
   border: 1px solid grey;
 }
 
 /* || Reviews Section || */
+.reviews {
+  height: 100%;
+  scroll-snap-align: start;
+  background-color: #fef6e4;
+}
+
+blockquote::before {
+  content: open-quote;
+  font-size: 2.5rem;
+  padding: 1.5rem;
+}
+
+blockquote::after {
+  content: close-quote;
+  font-size: 2.5rem;
+  padding: 1.5rem;
+}
+
 .owl-carousel {
   display: flex;
   flex-direction: column;

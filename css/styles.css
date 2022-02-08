@@ -40,22 +40,39 @@ li {
   list-style: none; }
 
 a {
-  color: inherit;
+  color: #001858;
   text-decoration: none; }
+
+p,
+blockquote {
+  color: #172c66; }
 
 h1 {
   font-size: 2.5rem; }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   text-align: center;
-  margin: 2rem 0 2rem 0; }
+  padding: 4rem 0 4rem 0; }
 
 h3 {
   font-size: 1.75rem; }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  color: #001858; }
+
 .nav__item {
   font-size: 1.5rem; }
+
+.prices {
+  font-weight: bold;
+  font-size: 2rem; }
 
 @keyframes moveInBottom {
   0% {
@@ -70,14 +87,15 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative; }
+  position: relative;
+  height: 11rem; }
 
 .header__top__fixed {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  background-color: beige; }
+  background-color: #fef6e4; }
 
 .logo_img {
   border-radius: 50%;
@@ -101,19 +119,21 @@ h3 {
 body {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  margin: 1rem 0 1rem 0;
-  padding: 2rem; }
+  flex-direction: column; }
 
 .main {
-  padding-top: 12.5rem; }
+  padding-top: 9rem; }
 
 /* || Biography Section || */
+.bio__background {
+  background-color: #fef6e4; }
+
 .bio {
   display: flex;
   align-items: center; }
 
 .bio__img {
+  border-radius: 50%;
   flex: 0.85;
   height: 50rem; }
 
@@ -123,8 +143,20 @@ body {
   align-items: center; }
 
 /* || Services Section || */
+.services__skew__top {
+  height: 5rem;
+  background: linear-gradient(to right bottom, #fef6e4 50%, #f3d2c1 50%); }
+
+.services__skew__bottom {
+  height: 5rem;
+  background: linear-gradient(to left bottom, #f3d2c1 50%, #fef6e4 50%); }
+
 .services {
-  padding: 5rem; }
+  padding: 5rem;
+  background: #f3d2c1; }
+
+.services h2 {
+  padding-top: 6rem; }
 
 .services__container {
   display: flex; }
@@ -137,10 +169,25 @@ body {
   justify-content: space-between;
   margin: 2.5rem;
   padding: 1.5rem;
-  height: 30rem;
+  height: 40rem;
   border: 1px solid grey; }
 
 /* || Reviews Section || */
+.reviews {
+  height: 100%;
+  scroll-snap-align: start;
+  background-color: #fef6e4; }
+
+blockquote::before {
+  content: open-quote;
+  font-size: 2.5rem;
+  padding: 1.5rem; }
+
+blockquote::after {
+  content: close-quote;
+  font-size: 2.5rem;
+  padding: 1.5rem; }
+
 .owl-carousel {
   display: flex;
   flex-direction: column;
@@ -181,7 +228,9 @@ body {
   right: 0; }
 
 .footer {
-  padding: 5rem; }
+  padding: 9rem;
+  margin-top: -1rem;
+  background-color: #fef6e4; }
 
 .btn {
   text-transform: uppercase;

@@ -16,8 +16,13 @@ li {
 }
 
 a {
-  color: inherit;
+  color: #001858;
   text-decoration: none;
+}
+
+p,
+blockquote {
+  color: #172c66;
 }
 
 h1 {
@@ -25,15 +30,30 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   text-align: center;
-  margin: 2rem 0 2rem 0;
+  padding: 4rem 0 4rem 0;
 }
 
 h3 {
   font-size: 1.75rem;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  color: #001858;
+}
+
 .nav__item {
   font-size: 1.5rem;
+}
+
+.prices {
+  font-weight: bold;
+  font-size: 2rem;
 }
