@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300;400&display=swap");
 
+$main-header-color: #f0b745;
+$headers-color: rgb(131, 103, 123);
+$main-text-color: #2d3142;
+$nav-color: #fbf9f8;
+
 body {
   text-rendering: optimizeSpeed;
   font-family: "Lato", sans-serif;
@@ -17,23 +22,24 @@ li {
 }
 
 a {
-  color: #001858;
+  color: $nav-color;
   text-decoration: none;
 }
 
 p,
 blockquote {
-  color: #172c66;
+  color: $main-text-color;
 }
 
 h1 {
-  font-size: 2.5rem;
+  color: $main-header-color;
+  font-size: 4rem;
 }
 
 h2 {
   font-size: 2.25rem;
   text-align: center;
-  padding: 4rem 0 4rem 0;
+  padding: 8rem 0 4rem 0;
   // margin: 2rem 0 2rem 0;
 }
 
@@ -41,14 +47,13 @@ h3 {
   font-size: 1.75rem;
 }
 
-h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   font-weight: bold;
-  color: #001858;
+  color: $headers-color;
 }
 
 .nav__item {

@@ -1,5 +1,8 @@
+$footer-background-color: #83677b;
+
 .footer {
   padding: 9rem;
   margin-top: -1rem;
-  background-color: #fef6e4;
+  background-color: $footer-background-color;
+  border-top: 0.5px solid beige;
 }

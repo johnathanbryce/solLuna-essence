@@ -16,37 +16,37 @@ li {
 }
 
 a {
-  color: #001858;
+  color: #fbf9f8;
   text-decoration: none;
 }
 
 p,
 blockquote {
-  color: #172c66;
+  color: #2d3142;
 }
 
 h1 {
-  font-size: 2.5rem;
+  color: #f0b745;
+  font-size: 4rem;
 }
 
 h2 {
   font-size: 2.25rem;
   text-align: center;
-  padding: 4rem 0 4rem 0;
+  padding: 8rem 0 4rem 0;
 }
 
 h3 {
   font-size: 1.75rem;
 }
 
-h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   font-weight: bold;
-  color: #001858;
+  color: #83677b;
 }
 
 .nav__item {

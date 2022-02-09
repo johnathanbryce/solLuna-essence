@@ -8,9 +8,33 @@ body {
   padding-top: 9rem;
 }
 
+/* || Main Image Section || */
+.textover {
+  position: relative;
+  margin-top: 5rem;
+}
+
+.main__img {
+  clip-path: circle(50% at 50% 50%);
+  width: 100%;
+  z-index: -1;
+  position: relative;
+}
+
+.textover figcaption {
+  position: absolute;
+  bottom: 50%;
+  left: 20%;
+  right: 20%;
+  top: 30%;
+  text-align: center;
+  z-index: -1;
+  color: #a5988d;
+}
+
 /* || Biography Section || */
 .bio__background {
-  background-color: #fef6e4;
+  background-color: white;
 }
 
 .bio {
@@ -19,9 +43,9 @@ body {
 }
 
 .bio__img {
-  border-radius: 50%;
   flex: 0.85;
   height: 50rem;
+  padding-left: 2rem;
 }
 
 .bio__article {
@@ -31,19 +55,28 @@ body {
 }
 
 /* || Services Section || */
+/*
 .services__skew__top {
   height: 5rem;
-  background: linear-gradient(to right bottom, #fef6e4 50%, #f3d2c1 50%);
+  background: linear-gradient(
+    to right bottom,
+    $main-background-color 50%,
+    $services-background-color 50%
+  );
 }
 
 .services__skew__bottom {
   height: 5rem;
-  background: linear-gradient(to left bottom, #f3d2c1 50%, #fef6e4 50%);
+  background: linear-gradient(
+    to left bottom,
+    $services-background-color 50%,
+    $main-background-color 50%
+  );
 }
-
+*/
 .services {
   padding: 5rem;
-  background: #f3d2c1;
+  background: #fbf9f8;
 }
 
 .services h2 {
@@ -63,26 +96,29 @@ body {
   margin: 2.5rem;
   padding: 1.5rem;
   height: 40rem;
-  border: 1px solid grey;
+  border: 1px solid #83677b;
+  border-radius: 5rem;
 }
 
 /* || Reviews Section || */
 .reviews {
   height: 100%;
   scroll-snap-align: start;
-  background-color: #fef6e4;
+  background-color: #fbf9f8;
 }
 
 blockquote::before {
   content: open-quote;
   font-size: 2.5rem;
   padding: 1.5rem;
+  z-index: -100;
 }
 
 blockquote::after {
   content: close-quote;
   font-size: 2.5rem;
   padding: 1.5rem;
+  z-index: -100;
 }
 
 .owl-carousel {
@@ -119,7 +155,7 @@ blockquote::after {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 6rem !important;
+  font-size: 6rem;
   font-weight: bold;
 }
 

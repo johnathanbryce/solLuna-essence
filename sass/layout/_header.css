@@ -4,7 +4,12 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  height: 11rem;
+  height: 15rem;
+  border-bottom: 0.5px solid beige;
+}
+
+.header__h1 {
+  padding-top: 2rem;
 }
 
 .header__top__fixed {
@@ -12,9 +17,10 @@
   width: 100%;
   top: 0;
   left: 0;
-  background-color: #fef6e4;
+  background-color: #83677b;
 }
 
+/*
 .logo_img {
   border-radius: 50%;
   height: 10rem;
@@ -24,7 +30,7 @@
   float: left;
   position: absolute;
 }
-
+*/
 .nav {
   display: flex;
   margin: 0.5rem;
