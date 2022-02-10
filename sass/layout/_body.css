@@ -15,17 +15,16 @@ body {
 }
 
 .main__img {
-  clip-path: circle(50% at 50% 50%);
   width: 100%;
-  z-index: -1;
+  z-index: -100;
   position: relative;
 }
 
 .textover figcaption {
   position: absolute;
   bottom: 50%;
-  left: 20%;
-  right: 20%;
+  left: 25%;
+  right: 25%;
   top: 30%;
   text-align: center;
   z-index: -1;
@@ -45,13 +44,25 @@ body {
 .bio__img {
   flex: 0.85;
   height: 50rem;
-  padding-left: 2rem;
+  padding: 0 0 2rem 2rem;
+  border-radius: 8rem;
 }
 
 .bio__article {
   flex: 1.5;
   padding: 2rem;
   align-items: center;
+}
+
+.bio__article__icons {
+  display: flex;
+}
+
+.bio__article__icons a {
+  margin-top: 2rem;
+  padding-right: 2rem;
+  width: 6rem;
+  opacity: 0.5;
 }
 
 /* || Services Section || */

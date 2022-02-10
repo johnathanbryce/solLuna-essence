@@ -1,12 +1,8 @@
-$main-background-color: #fbf9f8; //#f9f6f5
+$main-background-color: #fbf9f8; //#fbf9f8
 $services-background-color: #fbf9f8; //#fef6e4
 $header-background-color: #cbc0d3;
 
-// #F9F6F5 -- light beige
-
-// #FBF9F8 -- cultured (white)
-
-// #F7F2EF
+// #83677b
 
 body {
   min-height: 100vh;
@@ -28,18 +24,18 @@ body {
 }
 
 .main__img {
-  clip-path: circle(50% at 50% 50%);
+  //clip-path: circle(50% at 50% 50%);
   width: 100%;
 
-  z-index: -1;
+  z-index: -100;
   position: relative;
 }
 
 .textover figcaption {
   position: absolute;
   bottom: 50%;
-  left: 20%;
-  right: 20%;
+  left: 25%;
+  right: 25%;
   top: 30%;
   text-align: center;
   z-index: -1;
@@ -62,13 +58,26 @@ body {
   //border-radius: 50%;
   flex: 0.85;
   height: 50rem;
-  padding-left: 2rem;
+  padding: 0 0 2rem 2rem;
+
+  border-radius: 8rem;
 }
 
 .bio__article {
   flex: 1.5;
   padding: 2rem;
   align-items: center;
+}
+
+.bio__article__icons {
+  display: flex;
+}
+
+.bio__article__icons a {
+  margin-top: 2rem;
+  padding-right: 2rem;
+  width: 6rem;
+  opacity: 0.5;
 }
 
 /* || Services Section || */
@@ -154,7 +163,6 @@ blockquote::after {
   width: 100%;
   padding: 10rem;
   height: 75%;
-
   position: relative;
 }
 

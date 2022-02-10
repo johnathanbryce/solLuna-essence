@@ -5,4 +5,28 @@ $footer-background-color: #83677b;
   margin-top: -1rem;
   background-color: $footer-background-color;
   border-top: 0.5px solid beige;
+  position: relative;
+}
+
+.footer:after {
+  content: "";
+  background: url("../../images/solluna-essence-logo.jpeg") no-repeat center
+    center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+.footer__text p {
+  color: #f0b745;
+  font-weight: bold;
 }

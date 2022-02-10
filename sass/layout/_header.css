@@ -6,6 +6,33 @@
   position: relative;
   height: 15rem;
   border-bottom: 0.5px solid beige;
+  transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  z-index: 9999;
+}
+
+.header:after {
+  content: "";
+  background: url("../../images/solluna-essence-logo.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.sticky {
+  transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
 }
 
 .header__h1 {
@@ -42,4 +69,28 @@
 .nav__item {
   margin: 0.5rem;
   padding: 0.5rem;
+  z-index: 100;
+}
+
+.nav__item a:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+.nav__item a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0.1rem;
+  background: white;
+  transition: width 0.3s;
+}
+
+.nav__item a:hover::after {
+  width: 100%;
 }

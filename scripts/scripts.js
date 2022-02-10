@@ -1,3 +1,27 @@
+// shrink header on scroll
+
+const header = document.getElementById("header");
+const headerTitle = document.querySelector("h1");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 790 ||
+    document.documentElement.scrollTop > 790
+  ) {
+    header.style.height = "5rem";
+
+    headerTitle.style.display = "none";
+  } else {
+    header.style.height = "15rem";
+
+    headerTitle.style.display = "initial";
+  }
+}
+
 // owl carousel jquery
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
