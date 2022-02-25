@@ -33,7 +33,7 @@ body {
 
 /* || Biography Section || */
 .bio__background {
-  background-color: white;
+  background-color: #f5f5f5;
 }
 
 .bio {
@@ -63,6 +63,7 @@ body {
   padding-right: 2rem;
   width: 6rem;
   opacity: 0.5;
+  z-index: 1;
 }
 
 /* || Services Section || */
@@ -87,7 +88,7 @@ body {
 */
 .services {
   padding: 5rem;
-  background: #fbf9f8;
+  background: #fcfaf3;
 }
 
 .services h2 {
@@ -115,7 +116,7 @@ body {
 .reviews {
   height: 100%;
   scroll-snap-align: start;
-  background-color: #fbf9f8;
+  background-color: #fcfaf3;
 }
 
 blockquote::before {

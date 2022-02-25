@@ -1,5 +1,4 @@
 // shrink header on scroll
-
 const header = document.getElementById("header");
 const headerTitle = document.querySelector("h1");
 
@@ -9,8 +8,8 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (
-    document.body.scrollTop > 790 ||
-    document.documentElement.scrollTop > 790
+    document.body.scrollTop > 700 ||
+    document.documentElement.scrollTop > 700
   ) {
     header.style.height = "5rem";
 

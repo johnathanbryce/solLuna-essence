@@ -1,6 +1,6 @@
 /* || Header  ||   */
 
-$header-background-color: #83677b;
+$header-background-color: rgb(186, 161, 204);
 
 .header {
   display: flex;
@@ -12,7 +12,7 @@ $header-background-color: #83677b;
   transition: all 0.6s ease-in-out;
   -webkit-transition: all 0.6s ease-in-out;
   -moz-transition: all 0.6s ease-in-out;
-  z-index: 9999;
+  z-index: 100;
 }
 
 .header:after {
@@ -52,27 +52,16 @@ $header-background-color: #83677b;
   background-color: $header-background-color;
 }
 
-/*
-.logo_img {
-  border-radius: 50%;
-  height: 10rem;
-  width: 10rem;
-  top: 0.25rem;
-  left: 1rem;
-  float: left;
-  position: absolute;
-}
-*/
-
 .nav {
   display: flex;
   margin: 0.5rem;
   padding: 0.5rem;
+
   justify-content: space-around;
   width: 100%;
 
   &__item {
-    margin: 0.5rem;
+    margin: 0.25rem;
     padding: 0.5rem;
     z-index: 100;
   }

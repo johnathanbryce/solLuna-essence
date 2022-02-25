@@ -1,6 +1,8 @@
-$main-background-color: #fbf9f8; //#fbf9f8
-$services-background-color: #fbf9f8; //#fef6e4
+$main-background-color: #fcfaf3; //#fbf9f8
+$services-background-color: #fcfaf3; //#fef6e4
 $header-background-color: #cbc0d3;
+
+// #F4EDDD ** CURRENT COLOUR
 
 // #83677b
 
@@ -46,7 +48,7 @@ body {
 /* || Biography Section || */
 
 .bio__background {
-  background-color: white;
+  background-color: #f5f5f5;
 }
 
 .bio {
@@ -55,7 +57,7 @@ body {
 }
 
 .bio__img {
-  //border-radius: 50%;
+  //\\border-radius: 50%;
   flex: 0.85;
   height: 50rem;
   padding: 0 0 2rem 2rem;
@@ -78,6 +80,7 @@ body {
   padding-right: 2rem;
   width: 6rem;
   opacity: 0.5;
+  z-index: 1;
 }
 
 /* || Services Section || */
