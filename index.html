@@ -10,13 +10,15 @@
     />
     <!-- TODO  fill out content description-->
     <meta name="description" content="FILL OUT" />
-
     <meta name="author" content="JohnathanBryce" />
-
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="images/logo.png" />
 
-    <!-- TODO  add favicon -->
-    <link rel="icon" type="image/png" href="https://example.com/favicon.png" />
+    <!-- Credit for Icons: 
+     Gmail icons created by smoodlabs - Flaticon: "https://www.flaticon.com/free-icons/gmail" 
+ 
+    Instagram icons created by Freepik - Flaticon:"https://www.flaticon.com/free-icons/instagram"
+     -->
 
     <!-- Font Awesome -->
     <link
@@ -42,14 +44,6 @@
   <body>
     <!--HEADER/NAV SECTION  -->
     <div class="header__top__fixed">
-      <!--
-  <img
-  class="logo_img"
-  src="/images/solluna-essence-logo.jpeg"
-  rel="noreferrer"
-/>
--->
-
       <header class="header" id="header">
         <h1 class="header__h1">SolLunna Essence</h1>
         <nav class="nav" id="nav-links">
@@ -77,7 +71,7 @@
       </figure>
 
       <!-- Services  Section -->
-      <div class="services__skew__top"></div>
+
       <section class="services" id="services">
         <h2 class="services__header">Let's Work Together</h2>
 
@@ -124,19 +118,20 @@
             </button>
           </div>
         </article>
+        <span class="logo-divider-1"></span>
       </section>
-
-      <div class="services__skew__bottom"></div>
 
       <!-- Biography Section -->
       <div class="bio__background" id="bio">
         <h2 class="bio__header">Meet Sydney</h2>
         <section class="bio">
-          <img
-            class="bio__img"
-            src="/images/bio_picture.jpeg"
-            rel="noreferrer"
-          />
+          <div class="bio__img__container">
+            <img
+              class="bio__img"
+              src="/images/bio_picture.jpeg"
+              rel="noreferrer"
+            />
+          </div>
           <article class="bio__article">
             <p>
               Mollit proident pariatur mollit amet amet. Elit cillum tempor
@@ -179,7 +174,7 @@
       <!-- REVIEWS SECTION -->
       <section class="reviews" id="reviews">
         <h2 class="reviews__header">Client Testimonials</h2>
-
+        <span class="logo-divider-2"></span>
         <!-- Carousel -->
         <article class="owl-carousel owl-theme">
           <div class="slide slide-1">
@@ -209,7 +204,7 @@
 
           <div class="slide slide-3">
             <blockquote>
-              My experiences with Syd for bio-energy healing and eelvations are
+              My experiences with Syd for bio-energy healing and elevations are
               always my most honoured and gifted time of self-care. Syd enables
               an energy outward so that I am able to fully be at ease in my own
               skin. I felt that I was held safely and respectfully while
@@ -232,57 +227,61 @@
       <div class="footer__text">
         <p>website developed by: johnathan bryce</p>
       </div>
-
-      <a
-        href="https://www.flaticon.com/free-icons/linkedin"
-        title="linkedin icons"
-        >Linkedin icons created by Smashicons - Flaticon</a
-      >
-      <a href="https://www.flaticon.com/free-icons/gmail" title="gmail icons"
-        >Gmail icons created by smoodlabs - Flaticon</a
-      >
-      <a
-        href="https://www.flaticon.com/free-icons/instagram"
-        title="instagram icons"
-        >Instagram icons created by Freepik - Flaticon</a
-      >
     </footer>
 
     <!-- SERVICES POPUPS SECTION-->
+    <!-- TODO: when the site is live with a domain, update the formsubmit.co/syd-email... to the live working website and NOT my local host TODO-->
     <!-- Oracle/Tarot Popup -->
     <div class="popup" id="popup">
       <div class="popup__content">
         <a href="#services" class="popup__close"> &times; </a>
         <h3>Oracle/Tarot Reading</h3>
         <div class="popup__form">
-          <form action="">
+          <!-- TODO: UPDATE TO SYD'S EMAIL WHEN SITE IS LIVE-->
+          <form
+            action="https://formsubmit.co/johnathanbryce@gmail.com"
+            method="POST"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_subject"
+              value="Client Service Request - Oracle/Tarot Reading"
+            />
             <label for="name"> Name </label>
             <input
               type="text"
               id="name"
               name="name"
               placeholder="Type your name here..."
+              required
             />
+
             <label for="email"> Email </label>
             <input
               type="email"
-              id="email"
               name="email"
               placeholder="Type your email here..."
+              required
             />
+
             <label for="summary"> How can I help? </label>
             <textarea
               name="summary"
-              rows="3"
+              rows="5"
               placeholder="Please briefly describe what you are looking to get from this service..."
+              required
             ></textarea>
             <label for="questions"> Any Questions? </label>
             <textarea
               name="questions"
-              rows="2"
+              rows="4"
               placeholder="Ask any specific questions you may have about this service here..."
             ></textarea>
             <input class="popup__submit" type="submit" value="Submit" />
+            <p class="disclaimer">
+              *service payment(s) to be handled via email
+            </p>
           </form>
         </div>
       </div>
@@ -294,34 +293,51 @@
         <a href="#services" class="popup__close"> &times; </a>
         <h3>Bio-Energy Healing</h3>
         <div class="popup__form">
-          <form action="">
+          <!-- TODO: UPDATE TO SYD'S EMAIL WHEN SITE IS LIVE-->
+          <form
+            action="https://formsubmit.co/johnathanbryce@gmail.com"
+            method="POST"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_subject"
+              value="Client Service Request - Bio Energy Healing"
+            />
             <label for="name"> Name </label>
             <input
               type="text"
               id="name"
               name="name"
               placeholder="Type your name here..."
+              required
             />
+
             <label for="email"> Email </label>
             <input
               type="email"
-              id="email"
               name="email"
               placeholder="Type your email here..."
+              required
             />
+
             <label for="summary"> How can I help? </label>
             <textarea
               name="summary"
-              rows="3"
+              rows="5"
               placeholder="Please briefly describe what you are looking to get from this service..."
+              required
             ></textarea>
             <label for="questions"> Any Questions? </label>
             <textarea
               name="questions"
-              rows="2"
+              rows="4"
               placeholder="Ask any specific questions you may have about this service here..."
             ></textarea>
             <input class="popup__submit" type="submit" value="Submit" />
+            <p class="disclaimer">
+              *service payment(s) to be handled via email
+            </p>
           </form>
         </div>
       </div>
@@ -333,34 +349,51 @@
         <a href="#services" class="popup__close"> &times; </a>
         <h3>Kundalini Mediation One-on-One</h3>
         <div class="popup__form">
-          <form action="">
+          <!-- TODO: UPDATE TO SYD'S EMAIL WHEN SITE IS LIVE-->
+          <form
+            action="https://formsubmit.co/johnathanbryce@gmail.com"
+            method="POST"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_subject"
+              value="Client Service Request - Kundalini Mediation One-on-One"
+            />
             <label for="name"> Name </label>
             <input
               type="text"
               id="name"
               name="name"
               placeholder="Type your name here..."
+              required
             />
+
             <label for="email"> Email </label>
             <input
               type="email"
-              id="email"
               name="email"
               placeholder="Type your email here..."
+              required
             />
+
             <label for="summary"> How can I help? </label>
             <textarea
               name="summary"
-              rows="3"
+              rows="5"
               placeholder="Please briefly describe what you are looking to get from this service..."
+              required
             ></textarea>
             <label for="questions"> Any Questions? </label>
             <textarea
               name="questions"
-              rows="2"
+              rows="4"
               placeholder="Ask any specific questions you may have about this service here..."
             ></textarea>
             <input class="popup__submit" type="submit" value="Submit" />
+            <p class="disclaimer">
+              *service payment(s) to be handled via email
+            </p>
           </form>
         </div>
       </div>

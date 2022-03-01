@@ -25,15 +25,6 @@ picture {
   max-width: 100%;
   display: block; }
 
-body {
-  text-rendering: optimizeSpeed;
-  font-family: "Lato", sans-serif;
-  font-family: "Open Sans", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 1.6rem;
-  line-height: 1.7; }
-
 ol,
 ul,
 li {
@@ -44,13 +35,18 @@ a {
   text-decoration: none;
   padding-bottom: 2rem; }
 
+figcaption {
+  font-size: 1.6rem; }
+
 p,
 blockquote {
-  color: #2d3142; }
+  color: #2d3142;
+  font-size: 1.6rem; }
 
 h1 {
-  color: #f0b745;
-  font-size: 4rem; }
+  font-size: 4rem;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
 
 h2 {
   font-size: 2.25rem;
@@ -66,14 +62,47 @@ h4,
 h5,
 h6 {
   font-weight: bold;
-  color: #83677b; }
+  color: #bb342f; }
+
+nav a {
+  font-size: 2rem; }
+
+label {
+  font-size: 1.5rem; }
 
 .nav__item {
-  font-size: 1.5rem; }
+  font-size: 1.15rem; }
 
 .prices {
   font-weight: bold;
   font-size: 2rem; }
+
+.popup__content h3 {
+  font-size: 2.5rem; }
+
+@media only screen and (max-width: 1100px) {
+  h3 {
+    font-size: 1.6rem; }
+  p {
+    font-size: 1.4rem; }
+  .prices {
+    font-size: 1.75rem; }
+  blockquote {
+    font-size: 1.4rem; } }
+
+@media only screen and (max-width: 900px) {
+  h3 {
+    font-size: 1.5rem; }
+  p {
+    font-size: 1.2rem; }
+  .prices {
+    font-size: 1.25rem; }
+  blockquote {
+    font-size: 1.2rem; } }
+
+@media only screen and (max-width: 700px) {
+  .popup__content h3 {
+    font-size: 1.7rem; } }
 
 @keyframes moveInBottom {
   0% {
@@ -90,6 +119,35 @@ body {
 
 .main {
   padding-top: 9rem; }
+
+.logo-divider-1 {
+  height: 10rem;
+  width: 10rem;
+  background: url("../../images/logo.png") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+.logo-divider-2 {
+  height: 10rem;
+  width: 10rem;
+  background: url("../../images/logo.png") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 89%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%); }
 
 /* || Main Image Section || */
 .textover {
@@ -109,7 +167,7 @@ body {
   top: 30%;
   text-align: center;
   z-index: -1;
-  color: #a5988d; }
+  color: #b7b6c1; }
 
 /* || Biography Section || */
 .bio__background {
@@ -140,26 +198,6 @@ body {
   opacity: 0.5;
   z-index: 1; }
 
-/* || Services Section || */
-/*
-.services__skew__top {
-  height: 5rem;
-  background: linear-gradient(
-    to right bottom,
-    $main-background-color 50%,
-    $services-background-color 50%
-  );
-}
-
-.services__skew__bottom {
-  height: 5rem;
-  background: linear-gradient(
-    to left bottom,
-    $services-background-color 50%,
-    $main-background-color 50%
-  );
-}
-*/
 .services {
   padding: 5rem;
   background: #fcfaf3; }
@@ -179,14 +217,16 @@ body {
   margin: 2.5rem;
   padding: 1.5rem;
   height: 40rem;
-  border: 1px solid #83677b;
-  border-radius: 5rem; }
+  border: 0.15rem solid #b7b6c1;
+  border-radius: 5rem;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12); }
 
 /* || Reviews Section || */
 .reviews {
   height: 100%;
   scroll-snap-align: start;
-  background-color: #fcfaf3; }
+  background-color: #fcfaf3;
+  position: relative; }
 
 blockquote::before {
   content: open-quote;
@@ -239,6 +279,43 @@ blockquote::after {
 .owl-next {
   right: 0; }
 
+@media only screen and (max-width: 800px) {
+  .services__container {
+    display: flex;
+    flex-direction: column; }
+  .services__card {
+    margin: 3.25rem;
+    padding: 1rem;
+    height: 25rem; }
+  .logo-divider-2 {
+    position: absolute;
+    bottom: 93%;
+    left: 50%;
+    right: 50%; }
+  .bio__img {
+    height: 30rem;
+    padding: 0 0 1.5rem 1.5rem; }
+  .bio__article__icons a {
+    margin-top: 1.5rem;
+    padding-right: 1.5rem;
+    width: 4rem;
+    opacity: 0.5;
+    z-index: 1; } }
+
+@media only screen and (max-width: 500px) {
+  .bio__article__icons a {
+    margin-top: 1.5rem;
+    margin-left: 5.5rem; }
+  .logo-divider-1 {
+    height: 8rem;
+    width: 8rem;
+    position: absolute; }
+  .logo-divider-2 {
+    height: 7rem;
+    width: 7rem;
+    position: absolute;
+    bottom: 96%; } }
+
 /* || Header  ||   */
 .header {
   display: flex;
@@ -246,11 +323,11 @@ blockquote::after {
   align-items: center;
   position: relative;
   height: 15rem;
-  border-bottom: 0.5px solid beige;
   transition: all 0.6s ease-in-out;
   -webkit-transition: all 0.6s ease-in-out;
   -moz-transition: all 0.6s ease-in-out;
-  z-index: 100; }
+  z-index: 100;
+  border-bottom: 0.15rem solid grey; }
 
 .header:after {
   content: "";
@@ -266,7 +343,7 @@ blockquote::after {
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: -1; }
+  z-index: 100; }
 
 .sticky {
   transition: all 0.6s ease-in-out;
@@ -274,14 +351,16 @@ blockquote::after {
   -moz-transition: all 0.6s ease-in-out; }
 
 .header__h1 {
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  margin-bottom: 2.25rem; }
 
 .header__top__fixed {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  background-color: #baa1cc; }
+  background-color: #baa1cc;
+  z-index: 100; }
 
 .nav {
   display: flex;
@@ -292,7 +371,7 @@ blockquote::after {
   .nav__item {
     margin: 0.25rem;
     padding: 0.5rem;
-    z-index: 100; }
+    z-index: 200; }
   .nav__item a:after {
     content: "";
     display: block;
@@ -384,6 +463,16 @@ blockquote::after {
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
+@media only screen and (max-width: 900px) {
+  .btn {
+    padding: 1.1rem 1.75rem;
+    font-size: 1rem; } }
+
+@media only screen and (max-width: 650px) {
+  .btn {
+    padding: 0.4rem 1rem;
+    font-size: 1rem; } }
+
 h3 {
   margin: 0 auto; }
 
@@ -401,10 +490,14 @@ textarea {
   padding-top: 1rem;
   padding: 0.75rem; }
 
+textarea {
+  resize: none; }
+
 label {
   border-bottom: 0.5px solid grey;
   width: 65%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0.5rem; }
 
 .popup {
   height: 100vh;

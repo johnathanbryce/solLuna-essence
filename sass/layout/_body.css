@@ -8,6 +8,37 @@ body {
   padding-top: 9rem;
 }
 
+.logo-divider-1 {
+  height: 10rem;
+  width: 10rem;
+  background: url("../../images/logo.png") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.logo-divider-2 {
+  height: 10rem;
+  width: 10rem;
+  background: url("../../images/logo.png") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 89%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
 /* || Main Image Section || */
 .textover {
   position: relative;
@@ -28,7 +59,7 @@ body {
   top: 30%;
   text-align: center;
   z-index: -1;
-  color: #a5988d;
+  color: #b7b6c1;
 }
 
 /* || Biography Section || */
@@ -66,26 +97,6 @@ body {
   z-index: 1;
 }
 
-/* || Services Section || */
-/*
-.services__skew__top {
-  height: 5rem;
-  background: linear-gradient(
-    to right bottom,
-    $main-background-color 50%,
-    $services-background-color 50%
-  );
-}
-
-.services__skew__bottom {
-  height: 5rem;
-  background: linear-gradient(
-    to left bottom,
-    $services-background-color 50%,
-    $main-background-color 50%
-  );
-}
-*/
 .services {
   padding: 5rem;
   background: #fcfaf3;
@@ -108,8 +119,9 @@ body {
   margin: 2.5rem;
   padding: 1.5rem;
   height: 40rem;
-  border: 1px solid #83677b;
+  border: 0.15rem solid #b7b6c1;
   border-radius: 5rem;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
 /* || Reviews Section || */
@@ -117,6 +129,7 @@ body {
   height: 100%;
   scroll-snap-align: start;
   background-color: #fcfaf3;
+  position: relative;
 }
 
 blockquote::before {
@@ -177,4 +190,51 @@ blockquote::after {
 
 .owl-next {
   right: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .services__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .services__card {
+    margin: 3.25rem;
+    padding: 1rem;
+    height: 25rem;
+  }
+  .logo-divider-2 {
+    position: absolute;
+    bottom: 93%;
+    left: 50%;
+    right: 50%;
+  }
+  .bio__img {
+    height: 30rem;
+    padding: 0 0 1.5rem 1.5rem;
+  }
+  .bio__article__icons a {
+    margin-top: 1.5rem;
+    padding-right: 1.5rem;
+    width: 4rem;
+    opacity: 0.5;
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .bio__article__icons a {
+    margin-top: 1.5rem;
+    margin-left: 5.5rem;
+  }
+  .logo-divider-1 {
+    height: 8rem;
+    width: 8rem;
+    position: absolute;
+  }
+  .logo-divider-2 {
+    height: 7rem;
+    width: 7rem;
+    position: absolute;
+    bottom: 96%;
+  }
 }

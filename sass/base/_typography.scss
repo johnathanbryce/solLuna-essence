@@ -1,19 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300;400&display=swap");
 
-$main-header-color: #f0b745;
-$headers-color: rgb(131, 103, 123);
+$main-header-color: #0b2027;
+$headers-color: #bb342f;
+// rgb(131, 103, 123)
 $main-text-color: #2d3142;
 $nav-color: #fbf9f8;
-
-body {
-  text-rendering: optimizeSpeed;
-  font-family: "Lato", sans-serif;
-  font-family: "Open Sans", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 1.6rem;
-  line-height: 1.7;
-}
 
 ol,
 ul,
@@ -28,21 +19,26 @@ a {
   padding-bottom: 2rem;
 }
 
+figcaption {
+  font-size: 1.6rem;
+}
+
 p,
 blockquote {
   color: $main-text-color;
+  font-size: 1.6rem;
 }
 
 h1 {
-  color: $main-header-color;
   font-size: 4rem;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 h2 {
   font-size: 2.25rem;
   text-align: center;
   padding: 8rem 0 4rem 0;
-  // margin: 2rem 0 2rem 0;
 }
 
 h3 {
@@ -58,11 +54,64 @@ h6 {
   color: $headers-color;
 }
 
-.nav__item {
+nav a {
+  font-size: 2rem;
+}
+
+label {
   font-size: 1.5rem;
+}
+
+.nav__item {
+  font-size: 1.15rem;
 }
 
 .prices {
   font-weight: bold;
   font-size: 2rem;
+}
+
+.popup__content h3 {
+  font-size: 2.5rem;
+}
+
+//MEDIA QUERIES
+@media only screen and (max-width: 1100px) {
+  h3 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+
+  .prices {
+    font-size: 1.75rem;
+  }
+
+  blockquote {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+
+  .prices {
+    font-size: 1.25rem;
+  }
+
+  blockquote {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .popup__content h3 {
+    font-size: 1.7rem;
+  }
 }

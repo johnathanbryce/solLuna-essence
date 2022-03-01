@@ -8,8 +8,8 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (
-    document.body.scrollTop > 700 ||
-    document.documentElement.scrollTop > 700
+    document.body.scrollTop > 300 ||
+    document.documentElement.scrollTop > 300
   ) {
     header.style.height = "5rem";
 
