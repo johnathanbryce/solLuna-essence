@@ -15,7 +15,7 @@ function scrollFunction() {
 
     headerTitle.style.display = "none";
   } else {
-    header.style.height = "15rem";
+    header.style.height = "20rem";
 
     headerTitle.style.display = "initial";
   }
@@ -25,7 +25,7 @@ function scrollFunction() {
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     items: 1,
-    nav: true,
+    nav: false,
     dots: true,
     dotClass: "owl-dot",
     dotsClass: "owl-dots",

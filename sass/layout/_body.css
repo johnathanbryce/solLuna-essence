@@ -93,7 +93,6 @@ body {
   margin-top: 2rem;
   padding-right: 2rem;
   width: 6rem;
-  opacity: 0.5;
   z-index: 1;
 }
 
@@ -171,16 +170,16 @@ blockquote::after {
 }
 
 .owl-dot {
-  width: 2rem;
-  height: 5rem;
+  width: 3rem;
+  height: 6rem;
 }
 
+/* carousel left and right arrows
 .owl-prev,
 .owl-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 6rem;
   font-weight: bold;
 }
 
@@ -191,7 +190,7 @@ blockquote::after {
 .owl-next {
   right: 0;
 }
-
+*/
 @media only screen and (max-width: 800px) {
   .services__container {
     display: flex;

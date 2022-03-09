@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300;400&display=swap");
+@font-face {
+  font-family: "Gravity 1";
+  src: url("../../fonts/TTF/Gravity 1.ttf"), url("/fonts/TTF/Gravity\ 1.ttf");
+}
 
 $main-header-color: #0b2027;
-$headers-color: #bb342f;
-// rgb(131, 103, 123)
+$headers-color: #847e89;
 $main-text-color: #2d3142;
 $nav-color: #fbf9f8;
 
@@ -30,19 +33,21 @@ blockquote {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 10rem;
+  padding: 0;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: "Gravity 1";
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 2.85rem;
   text-align: center;
   padding: 8rem 0 4rem 0;
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 2rem;
 }
 
 h2,
@@ -73,6 +78,11 @@ label {
 
 .popup__content h3 {
   font-size: 2.5rem;
+}
+
+.footer__container__left p,
+.footer__container__right p {
+  font-size: 1.25rem;
 }
 
 //MEDIA QUERIES

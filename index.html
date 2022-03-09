@@ -8,11 +8,14 @@
       content="initial-scale=1.0, width=device-width viewport-fit=cover"
       name="viewport"
     />
-    <!-- TODO  fill out content description-->
-    <meta name="description" content="FILL OUT" />
+  
+    <meta name="description" content="A landing page for clients interested in services provided by Sydney Fisher." />
     <meta name="author" content="JohnathanBryce" />
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link rel="icon" type="image/png" href="images/site-icon.png" />
+
+    <!-- AOS animations package-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- Credit for Icons: 
      Gmail icons created by smoodlabs - Flaticon: "https://www.flaticon.com/free-icons/gmail" 
@@ -37,7 +40,7 @@
     />
 
     <noscript>
-      Please enable Javascript in order to run this page fluidly.
+      Please enable Javascript in order to run this page properly.
     </noscript>
   </head>
 
@@ -67,7 +70,7 @@
           src="/images/main_image_cropped.jpg"
           rel="noreferrer"
         />
-        <figcaption>Guiding people back to their light</figcaption>
+        <figcaption data-aos="fade-in">Guiding people back to their light</figcaption>
       </figure>
 
       <!-- Services  Section -->
@@ -75,8 +78,8 @@
       <section class="services" id="services">
         <h2 class="services__header">Let's Work Together</h2>
 
-        <article class="services__container">
-          <div class="services__card">
+        <article class="services__container" >
+          <div class="services__card" data-aos="fade-right">
             <h3>Oracle/Tarot Reading</h3>
             <p>
               Nostrud ad proident velit adipisicing nulla sunt Lorem sunt
@@ -90,7 +93,7 @@
             </button>
           </div>
 
-          <div class="services__card">
+          <div class="services__card" data-aos="zoom-in">
             <h3>Bio-Energy Healing Session</h3>
             <p>
               Nostrud ad proident velit adipisicing nulla sunt Lorem sunt
@@ -104,7 +107,7 @@
             </button>
           </div>
 
-          <div class="services__card">
+          <div class="services__card" data-aos="fade-left">
             <h3>Kundalini Mediation One-on-One</h3>
             <p>
               Nostrud ad proident velit adipisicing nulla sunt Lorem sunt
@@ -125,14 +128,14 @@
       <div class="bio__background" id="bio">
         <h2 class="bio__header">Meet Sydney</h2>
         <section class="bio">
-          <div class="bio__img__container">
+          <div class="bio__img__container" data-aos="zoom-in">
             <img
               class="bio__img"
               src="/images/bio_picture.jpeg"
               rel="noreferrer"
             />
           </div>
-          <article class="bio__article">
+          <article class="bio__article" data-aos="fade-left">
             <p>
               Mollit proident pariatur mollit amet amet. Elit cillum tempor
               adipisicing minim quis. Est ad et deserunt tempor laborum id
@@ -217,6 +220,22 @@
               - Bex
             </blockquote>
           </div>
+
+          <div class="slide slide-4">
+            <blockquote>
+              I have had 3 Tarot readings with Sydney about 6 months apart and
+              found them to be amazing. Sydney's ability to read the past,
+              present, and speak to the future with such accuracy is remarkable.
+              In each reading, she spoke of things before they happened and I
+              was then able to watch them unfold. I also enjoyed the delivery of
+              the readings in short video snippets. The enthusiasm Syndey is
+              able to convey is contagious, and I would highly recommend a tarot
+              reading with Sydney.
+              <br />
+              - Michael
+            </blockquote>
+          </div>
+ 
         </article>
         <!-- end of Carousel -->
       </section>
@@ -224,8 +243,38 @@
 
     <!-- END OF MAIN  SECTION -->
     <footer class="footer">
-      <div class="footer__text">
+      <div class="footer__container__left">
         <p>website developed by: johnathan bryce</p>
+      </div>
+
+      <div class="footer__container__right">
+        <div class="footer__container__icons">
+          <a
+          href="https://www.instagram.com/sollunaessence/"
+          target="_blank"
+          rel="noreferrer"
+        >
+        <p> email:  </p>
+       
+          <img
+            src="/images/instagram.png"
+            alt="Gmail's Favicon"
+            height="25"
+          />
+      
+        </a>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=sydd.m.fisher@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+          <p> instagram: </p>
+            <img src="/images/mail.png" alt="Gmail's Favicon" height="25" />
+          </a>
+
+     
+        </div>
+        </div>
       </div>
     </footer>
 
@@ -280,7 +329,7 @@
             ></textarea>
             <input class="popup__submit" type="submit" value="Submit" />
             <p class="disclaimer">
-              *service payment(s) to be handled via email
+              *service payment(s) to be handled via email correspondence
             </p>
           </form>
         </div>
@@ -336,7 +385,7 @@
             ></textarea>
             <input class="popup__submit" type="submit" value="Submit" />
             <p class="disclaimer">
-              *service payment(s) to be handled via email
+              *service payment(s) to be handled via email correspondence
             </p>
           </form>
         </div>
@@ -392,7 +441,7 @@
             ></textarea>
             <input class="popup__submit" type="submit" value="Submit" />
             <p class="disclaimer">
-              *service payment(s) to be handled via email
+                  *service payment(s) to be handled via email correspondence
             </p>
           </form>
         </div>
@@ -405,5 +454,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <script src="scripts/scripts.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({duration: 2000});
+    </script>
+  
   </body>
 </html>
