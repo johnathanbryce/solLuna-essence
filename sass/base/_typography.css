@@ -23,7 +23,8 @@ figcaption {
 p,
 blockquote {
   color: #2d3142;
-  font-size: 1.6rem;
+  font-size: 1.45rem;
+  line-height: 1.55;
 }
 
 h1 {
@@ -41,7 +42,8 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  padding: 1rem 0 1rem 0;
 }
 
 h2,
@@ -65,9 +67,9 @@ label {
   font-size: 1.15rem;
 }
 
-.prices {
+.services__card__text .prices {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .popup__content h3 {
@@ -84,7 +86,7 @@ label {
     font-size: 1.6rem;
   }
   p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   .prices {
     font-size: 1.75rem;

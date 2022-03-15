@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 20rem;
   padding: 9rem;
   margin-top: -1rem;
   background-color: #baa1cc;

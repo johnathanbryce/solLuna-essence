@@ -3,13 +3,19 @@
   padding: 1.5rem 2rem;
   display: inline-block;
   transition: all 0.2s;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: bold;
   background-color: #dbc6ea;
+  border: 0.25rem solid white;
+  border-radius: 2rem;
 }
 
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 0.25rem solid white;
+  border-radius: 0rem;
 }
 
 .btn:hover::after {

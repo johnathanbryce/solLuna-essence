@@ -72,6 +72,10 @@ body {
   align-items: center;
 }
 
+.bio__article__description {
+  font-size: 1.8rem;
+}
+
 .bio__img {
   flex: 0.85;
   height: 50rem;
@@ -96,9 +100,10 @@ body {
   z-index: 1;
 }
 
+/* || Services Section || */
 .services {
   padding: 5rem;
-  background: #fcfaf3;
+  /*background: $services-background-color; */
 }
 
 .services h2 {
@@ -107,27 +112,70 @@ body {
 
 .services__container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .services__card {
   display: flex;
   flex-direction: column;
+  background-color: white;
   align-items: center;
   text-align: center;
   justify-content: space-between;
-  margin: 2.5rem;
+  width: 75%;
+  margin: 4.5rem;
   padding: 1.5rem;
-  height: 40rem;
+  height: 50rem;
   border: 0.15rem solid #b7b6c1;
   border-radius: 5rem;
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.textover_container {
+  background: black;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  border-radius: 3rem;
+  width: 100%;
+}
+
+.services__card__text p {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.services__card__text h3 {
+  color: white;
+}
+
+.services__card:nth-child(1) {
+  background-image: url("../../images/tarot-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services__card:nth-child(2) {
+  background-image: url("../../images/bioenergy-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services__card:nth-child(3) {
+  background-image: url("../../images/kundalini-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* || Reviews Section || */
 .reviews {
   height: 100%;
   scroll-snap-align: start;
-  background-color: #fcfaf3;
+  background-color: #f5f5f5;
   position: relative;
 }
 
