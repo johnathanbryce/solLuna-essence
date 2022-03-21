@@ -4,7 +4,7 @@ $footer-background-color: rgb(186, 161, 204);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 20rem;
+  height: 25rem;
   padding: 9rem;
   margin-top: -1rem;
   background-color: $footer-background-color;
@@ -28,7 +28,6 @@ $footer-background-color: rgb(186, 161, 204);
   -o-background-size: cover;
   background-size: cover;
   height: 100%;
-
   opacity: 0.1;
   top: 0;
   left: 0;
@@ -39,20 +38,20 @@ $footer-background-color: rgb(186, 161, 204);
 
 .footer__container__left,
 .footer__container__right {
-  color: #2d3142;
-  font-weight: bold;
-  padding: 0.5rem;
-}
-
-.footer__container__icons {
   display: flex;
   flex-direction: column;
+  z-index: 999;
 }
 
-.footer__container__icons a {
-  margin-top: 2rem;
-  padding-right: 2rem;
-  width: 6rem;
-  z-index: 1;
-  color: red;
+.footer__container__left p,
+.footer__container__right p {
+  padding: 0.5rem;
+  color: white;
+}
+
+@media only screen and (max-width: 550px) {
+  .footer__container__left p,
+  .footer__container__right p {
+    font-size: 1rem;
+  }
 }

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=League+Gothic&family=Open+Sans:wght@300;400&display=swap");
 *,
 *::after,
 *::before {
@@ -18,13 +18,17 @@ html {
 body {
   box-sizing: border-box;
   margin: 0;
-  min-height: 100vh; }
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+  font-family: "League Gothic", sans-serif;
+  font-family: "Open Sans", sans-serif; }
 
 img,
 picture {
   max-width: 100%;
   display: block; }
 
+/*@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300;400&display=swap");*/
 @font-face {
   font-family: "Gravity 1";
   src: url("../../fonts/TTF/Gravity 1.ttf"), url("/fonts/TTF/Gravity 1.ttf"); }
@@ -36,8 +40,7 @@ li {
 
 a {
   color: #fbf9f8;
-  text-decoration: none;
-  padding-bottom: 2rem; }
+  text-decoration: none; }
 
 figcaption {
   font-size: 1.6rem; }
@@ -46,13 +49,12 @@ p,
 blockquote {
   color: #2d3142;
   font-size: 1.45rem;
-  line-height: 1.55; }
+  line-height: 1.75; }
 
 h1 {
-  font-size: 10rem;
+  font-size: 11rem;
   padding: 0;
   color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-family: "Gravity 1"; }
 
 h2 {
@@ -83,7 +85,8 @@ label {
 
 .services__card__text .prices {
   font-weight: bold;
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  color: white; }
 
 .popup__content h3 {
   font-size: 2.5rem; }
@@ -190,7 +193,7 @@ body {
   align-items: center; }
 
 .bio__article__description {
-  font-size: 1.8rem; }
+  font-size: 1.5rem; }
 
 .bio__img {
   flex: 0.85;
@@ -215,7 +218,7 @@ body {
 /* || Services Section || */
 .services {
   padding: 5rem;
-  /*background: $services-background-color; */ }
+  color: #e3dde8; }
 
 .services h2 {
   padding-top: 6rem; }
@@ -232,23 +235,24 @@ body {
   align-items: center;
   text-align: center;
   justify-content: space-between;
-  width: 75%;
+  width: 85%;
+  height: 100%;
   margin: 4.5rem;
   padding: 1.5rem;
-  height: 50rem;
   border: 0.15rem solid #b7b6c1;
   border-radius: 5rem;
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12); }
 
-.textover_container {
-  background: black;
-  background: rgba(0, 0, 0, 0.8);
+.services__card__textover__container {
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
   padding: 1rem;
   border-radius: 3rem;
   width: 100%; }
 
 .services__card__text p {
-  color: white;
+  color: black;
+  font-weight: bold;
   font-size: 1.5rem;
   line-height: 2; }
 
@@ -334,14 +338,17 @@ blockquote::after {
   right: 0;
 }
 */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 925px) {
   .services__container {
     display: flex;
     flex-direction: column; }
   .services__card {
     margin: 3.25rem;
     padding: 1rem;
-    height: 25rem; }
+    width: 85%;
+    height: 100%; }
+  .services__card__text p {
+    font-size: 1.25rem; }
   .logo-divider-2 {
     position: absolute;
     bottom: 93%;
@@ -350,6 +357,8 @@ blockquote::after {
   .bio__img {
     height: 30rem;
     padding: 0 0 1.5rem 1.5rem; }
+  .bio__article__description {
+    font-size: 1.25rem; }
   .bio__article__icons a {
     margin-top: 1.5rem;
     padding-right: 1.5rem;
@@ -357,10 +366,34 @@ blockquote::after {
     opacity: 0.5;
     z-index: 1; } }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
+  .bio {
+    display: flex;
+    flex-direction: column; }
+  .bio__img__container {
+    width: 50%; }
+  .bio__img {
+    width: 100%;
+    height: 100%; } }
+
+@media only screen and (max-width: 550px) {
+  .textover {
+    height: 32.5rem; }
+  .main__img {
+    width: 100%;
+    height: 100%; }
+  .textover figcaption {
+    padding-top: 1rem;
+    font-size: 1rem; }
+  .services__card {
+    padding: 1rem;
+    width: 100%;
+    height: 100%; }
+  .services__card__text p {
+    font-size: 1rem; }
   .bio__article__icons a {
     margin-top: 1.5rem;
-    margin-left: 5.5rem; }
+    margin-left: 2rem; }
   .logo-divider-1 {
     height: 8rem;
     width: 8rem;
@@ -444,11 +477,20 @@ blockquote::after {
   .nav__item a:hover::after {
     width: 100%; }
 
+@media only screen and (max-width: 850px) {
+  .nav__item a {
+    margin: 5rem;
+    font-size: 1.25rem; } }
+
+@media only screen and (max-width: 550px) {
+  .nav__item a {
+    padding: 0.5rem; } }
+
 .footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 20rem;
+  height: 25rem;
   padding: 9rem;
   margin-top: -1rem;
   background-color: #baa1cc;
@@ -477,20 +519,19 @@ blockquote::after {
 
 .footer__container__left,
 .footer__container__right {
-  color: #2d3142;
-  font-weight: bold;
-  padding: 0.5rem; }
-
-.footer__container__icons {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  z-index: 999; }
 
-.footer__container__icons a {
-  margin-top: 2rem;
-  padding-right: 2rem;
-  width: 6rem;
-  z-index: 1;
-  color: red; }
+.footer__container__left p,
+.footer__container__right p {
+  padding: 0.5rem;
+  color: white; }
+
+@media only screen and (max-width: 550px) {
+  .footer__container__left p,
+  .footer__container__right p {
+    font-size: 1rem; } }
 
 .btn {
   text-transform: uppercase;

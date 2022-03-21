@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 20rem;
+  height: 25rem;
   padding: 9rem;
   margin-top: -1rem;
   background-color: #baa1cc;
@@ -35,20 +35,20 @@
 
 .footer__container__left,
 .footer__container__right {
-  color: #2d3142;
-  font-weight: bold;
-  padding: 0.5rem;
-}
-
-.footer__container__icons {
   display: flex;
   flex-direction: column;
+  z-index: 999;
 }
 
-.footer__container__icons a {
-  margin-top: 2rem;
-  padding-right: 2rem;
-  width: 6rem;
-  z-index: 1;
-  color: red;
+.footer__container__left p,
+.footer__container__right p {
+  padding: 0.5rem;
+  color: white;
+}
+
+@media only screen and (max-width: 550px) {
+  .footer__container__left p,
+  .footer__container__right p {
+    font-size: 1rem;
+  }
 }
