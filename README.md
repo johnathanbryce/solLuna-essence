@@ -3,4 +3,5 @@ This site provides current and prospective patrons a landing page to learn about
 techniques from Bio-Energy Healing Practitioner and Intuitive reader, Sydney Fisher.
 
 Languages used: CSS, SCSS, HTML, JavaScript, jQuery
+
 Highlighted skill: Working with a client
