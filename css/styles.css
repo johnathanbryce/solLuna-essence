@@ -320,23 +320,6 @@ blockquote::after {
   width: 3rem;
   height: 6rem; }
 
-/* carousel left and right arrows
-.owl-prev,
-.owl-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-weight: bold;
-}
-
-.owl-prev {
-  left: 0;
-}
-
-.owl-next {
-  right: 0;
-}
-*/
 @media only screen and (max-width: 925px) {
   .services__container {
     display: flex;
@@ -651,7 +634,7 @@ label {
     flex-direction: column;
     padding: 2rem;
     width: 55%;
-    height: 55rem;
+    height: 65rem;
     background-color: #fcfaf3;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     position: absolute;
