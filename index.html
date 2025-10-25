@@ -2,23 +2,57 @@
 
 <html lang="en">
   <head>
-    <title>SolLuna Essence</title>
+    <title>SolLuna Essence - Bio-Energy Healing, Tarot Readings & Kundalini Meditation in Vancouver BC</title>
     <meta charset="UTF-8" />
     <meta
-      content="initial-scale=1.0, width=device-width viewport-fit=cover"
+      content="initial-scale=1.0, width=device-width, viewport-fit=cover"
       name="viewport"
     />
 
     <meta
       name="description"
-      content="A landing page for clients interested in services provided by Sydney Fisher."
+      content="Professional bio-energy healing, intuitive tarot readings, and kundalini meditation sessions in Vancouver, BC. Sydney Fisher, certified healing practitioner and yoga instructor. Book your spiritual healing session today."
     />
-    <meta name="author" content="JohnathanBryce" />
+    <meta name="keywords" content="bio-energy healing Vancouver, tarot readings BC, kundalini meditation, energy healing practitioner, spiritual healing, intuitive reader, yoga instructor Vancouver, holistic healing" />
+    <meta name="author" content="Sydney Fisher, JohnathanBryce" />
+    <meta name="theme-color" content="#baa1cc" />
+
+    <!-- Geo tags -->
+    <meta name="geo.region" content="CA-BC" />
+    <meta name="geo.placename" content="Vancouver" />
+
+    <!-- Canonical URL - Update with actual domain -->
+    <link rel="canonical" href="https://sollunaessence.com/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sollunaessence.com/" />
+    <meta property="og:title" content="SolLuna Essence - Bio-Energy Healing & Tarot Readings in Vancouver BC" />
+    <meta property="og:description" content="Professional bio-energy healing, intuitive tarot readings, and kundalini meditation sessions in Vancouver, BC. Certified healing practitioner Sydney Fisher." />
+    <meta property="og:image" content="https://sollunaessence.com/images/solluna-essence-logo.jpeg" />
+    <meta property="og:locale" content="en_CA" />
+    <meta property="og:site_name" content="SolLuna Essence" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://sollunaessence.com/" />
+    <meta name="twitter:title" content="SolLuna Essence - Bio-Energy Healing & Tarot Readings in Vancouver BC" />
+    <meta name="twitter:description" content="Professional bio-energy healing, intuitive tarot readings, and kundalini meditation sessions in Vancouver, BC." />
+    <meta name="twitter:image" content="https://sollunaessence.com/images/solluna-essence-logo.jpeg" />
+    <meta name="twitter:site" content="@sollunaessence" />
+
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="preconnect" href="https://code.jquery.com" />
+
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/png" href="images/site-icon.png" />
 
     <!-- AOS animations package-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="print" onload="this.media='all'" />
 
     <!-- Credit for Icons: 
      Gmail icons created by smoodlabs - Flaticon: "https://www.flaticon.com/free-icons/gmail" 
@@ -42,6 +76,118 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
     />
 
+    <!-- Structured Data (Schema.org) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "SolLuna Essence",
+      "image": "https://sollunaessence.com/images/solluna-essence-logo.jpeg",
+      "description": "Professional bio-energy healing, intuitive tarot readings, and kundalini meditation sessions in Vancouver, BC.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Vancouver",
+        "addressRegion": "BC",
+        "addressCountry": "CA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "49.2827",
+        "longitude": "-123.1207"
+      },
+      "url": "https://sollunaessence.com",
+      "telephone": "",
+      "email": "sollunaessence222@gmail.com",
+      "priceRange": "$55-$111",
+      "openingHours": "Mo-Su",
+      "areaServed": {
+        "@type": "City",
+        "name": "Vancouver"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Healing Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Oracle/Tarot Readings",
+              "description": "60-minute intuitive tarot and oracle card reading session, offered online.",
+              "provider": {
+                "@type": "Person",
+                "name": "Sydney Fisher"
+              },
+              "offers": {
+                "@type": "Offer",
+                "priceCurrency": "CAD",
+                "price": "55-88"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Bio-Energy Healing",
+              "description": "60-minute bio-energy healing session using gentle techniques to clear energy blockages, offered in-person or online.",
+              "provider": {
+                "@type": "Person",
+                "name": "Sydney Fisher"
+              },
+              "offers": {
+                "@type": "Offer",
+                "priceCurrency": "CAD",
+                "price": "88-111"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Kundalini Meditation One-on-One",
+              "description": "60-minute personalized kundalini meditation session incorporating breath, mantra, and movement, offered online.",
+              "provider": {
+                "@type": "Person",
+                "name": "Sydney Fisher"
+              },
+              "offers": {
+                "@type": "Offer",
+                "priceCurrency": "CAD",
+                "price": "100"
+              }
+            }
+          }
+        ]
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sydney Fisher",
+      "jobTitle": "Bio-Energy Healing Practitioner, Yoga Instructor, Intuitive Reader",
+      "description": "Certified Bio-Energy Healing Practitioner, Yoga instructor, and Intuitive reader based in Vancouver, BC.",
+      "email": "sollunaessence222@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Vancouver",
+        "addressRegion": "BC",
+        "addressCountry": "CA"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "SolLuna Essence"
+      },
+      "sameAs": [
+        "https://www.instagram.com/sollunaessence/"
+      ]
+    }
+    </script>
+
     <noscript>
       Please enable Javascript in order to run this page properly.
     </noscript>
@@ -50,12 +196,12 @@
   <body>
     <!--HEADER/NAV SECTION  -->
     <div class="header__top__fixed">
-      <header class="header" id="header">
+      <header class="header" id="header" role="banner">
         <h1 class="header__h1">SolLuna Essence </h1>
-        <nav class="nav" id="nav-links">
-          <li class="nav__item"><a href="#services">Services </a></li>
-          <li class="nav__item"><a href="#bio">Bio </a></li>
-          <li class="nav__item"><a href="#reviews">Reviews </a></li>
+        <nav class="nav" id="nav-links" role="navigation" aria-label="Main navigation">
+          <li class="nav__item"><a href="#services" aria-label="View our healing services">Services </a></li>
+          <li class="nav__item"><a href="#bio" aria-label="Learn about Sydney Fisher">Bio </a></li>
+          <li class="nav__item"><a href="#reviews" aria-label="Read client testimonials">Reviews </a></li>
         </nav>
       </header>
     </div>
@@ -64,14 +210,15 @@
 
     <!-- MAIN  SECTION -->
 
-    <main class="main">
+    <main class="main" role="main">
       <!-- Main Image Section -->
 
       <figure class="textover">
         <img
           class="main__img"
-          src="/images/main_image_cropped.jpg"
-          rel="noreferrer"
+          src="images/main_image_cropped.jpg"
+          alt="Peaceful nature scene representing spiritual healing and guidance in Vancouver BC"
+          loading="eager"
         />
         <figcaption data-aos="fade-in">
           Guiding people back to their light
@@ -80,8 +227,8 @@
 
       <!-- Services  Section -->
 
-      <section class="services" id="services">
-        <h2 class="services__header">Let's Work Together</h2>
+      <section class="services" id="services" aria-labelledby="services-heading">
+        <h2 class="services__header" id="services-heading">Let's Work Together</h2>
 
         <article class="services__container">
 
@@ -112,7 +259,7 @@
               </p>
             </div>
             <p class="prices">$55 - $88</p>
-            <button class="btn" type="button" id="service-pop-up">
+            <button class="btn" type="button">
               <a href="#popup">Request this service</a>
             </button>
           </div>
@@ -141,7 +288,7 @@
             </div>
             <p class="prices">$88 - $111</p>
 
-            <button class="btn" type="button" id="service-pop-up">
+            <button class="btn" type="button">
               <a href="#popup2">Request this service</a>
             </button>
           </div>
@@ -167,7 +314,7 @@
               </p>
             </div>
             <p class="prices">$100 / hr</p>
-            <button class="btn" type="button" id="service-pop-up">
+            <button class="btn" type="button">
               <a href="#popup3">Request this service</a>
             </button>
           </div>
@@ -178,13 +325,14 @@
       <!-- Biography Section -->
        
       <div class="bio__background" id="bio">
-        <h2 class="bio__header">Meet Syd</h2>
-        <section class="bio">
+        <h2 class="bio__header" id="bio-heading">Meet Syd</h2>
+        <section class="bio" aria-labelledby="bio-heading">
           <div class="bio__img__container" data-aos="fade-in">
             <img
               class="bio__img"
-              src="/images/bio_picture2.jpeg"
-              rel="noreferrer"
+              src="images/bio_picture2.jpeg"
+              alt="Sydney Fisher - Bio-Energy Healing Practitioner, Yoga instructor, and Intuitive reader"
+              loading="lazy"
             />
           </div>
           <article class="bio__article" data-aos="fade-in">
@@ -231,7 +379,7 @@
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="/images/mail.png" alt="Gmail's Favicon" height="25" />
+                <img src="images/mail.png" alt="Email SolLuna Essence" height="25" width="25" loading="lazy" />
               </a>
 
               <a
@@ -240,9 +388,11 @@
                 rel="noreferrer"
               >
                 <img
-                  src="/images/instagram.png"
-                  alt="Gmail's Favicon"
+                  src="images/instagram.png"
+                  alt="Follow SolLuna Essence on Instagram"
                   height="25"
+                  width="25"
+                  loading="lazy"
                 />
               </a>
             </div>
@@ -251,8 +401,8 @@
       </div>
 
       <!-- REVIEWS SECTION -->
-      <section class="reviews" id="reviews">
-        <h2 class="reviews__header">Client Testimonials</h2>
+      <section class="reviews" id="reviews" aria-labelledby="reviews-heading">
+        <h2 class="reviews__header" id="reviews-heading">Client Testimonials</h2>
         <span class="logo-divider-2"></span>
         <!-- Carousel -->
         <article class="owl-carousel owl-theme">
@@ -326,7 +476,7 @@
 
     <!-- END OF MAIN  SECTION -->
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
       <div class="footer__container__left">
         <p>website developed by johnathan bryce</p>
         <a
@@ -538,14 +688,16 @@
     </div>
 
     <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
     <!-- Owl Carousel-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" defer></script>
 
-    <script src="scripts/scripts.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({ duration: 2000 });
+    <script src="scripts/scripts.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <script defer>
+      window.addEventListener('load', function() {
+        AOS.init({ duration: 2000 });
+      });
     </script>
   </body>
 </html>
