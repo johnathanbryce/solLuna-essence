@@ -5,7 +5,7 @@
     <title>SolLuna Essence</title>
     <meta charset="UTF-8" />
     <meta
-      content="initial-scale=1.0, width=device-width viewport-fit=cover"
+      content="initial-scale=1.0, width=device-width, viewport-fit=cover"
       name="viewport"
     />
 
@@ -14,11 +14,19 @@
       content="A landing page for clients interested in services provided by Sydney Fisher."
     />
     <meta name="author" content="JohnathanBryce" />
+
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="preconnect" href="https://code.jquery.com" />
+
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/png" href="images/site-icon.png" />
 
     <!-- AOS animations package-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="print" onload="this.media='all'" />
 
     <!-- Credit for Icons: 
      Gmail icons created by smoodlabs - Flaticon: "https://www.flaticon.com/free-icons/gmail" 
@@ -70,8 +78,9 @@
       <figure class="textover">
         <img
           class="main__img"
-          src="/images/main_image_cropped.jpg"
-          rel="noreferrer"
+          src="images/main_image_cropped.jpg"
+          alt="Peaceful nature scene representing spiritual healing and guidance"
+          loading="eager"
         />
         <figcaption data-aos="fade-in">
           Guiding people back to their light
@@ -112,7 +121,7 @@
               </p>
             </div>
             <p class="prices">$55 - $88</p>
-            <button class="btn" type="button" id="service-pop-up">
+            <button class="btn" type="button">
               <a href="#popup">Request this service</a>
             </button>
           </div>
@@ -141,7 +150,7 @@
             </div>
             <p class="prices">$88 - $111</p>
 
-            <button class="btn" type="button" id="service-pop-up">
+            <button class="btn" type="button">
               <a href="#popup2">Request this service</a>
             </button>
           </div>
@@ -167,7 +176,7 @@
               </p>
             </div>
             <p class="prices">$100 / hr</p>
-            <button class="btn" type="button" id="service-pop-up">
+            <button class="btn" type="button">
               <a href="#popup3">Request this service</a>
             </button>
           </div>
@@ -183,8 +192,9 @@
           <div class="bio__img__container" data-aos="fade-in">
             <img
               class="bio__img"
-              src="/images/bio_picture2.jpeg"
-              rel="noreferrer"
+              src="images/bio_picture2.jpeg"
+              alt="Sydney Fisher - Bio-Energy Healing Practitioner, Yoga instructor, and Intuitive reader"
+              loading="lazy"
             />
           </div>
           <article class="bio__article" data-aos="fade-in">
@@ -231,7 +241,7 @@
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="/images/mail.png" alt="Gmail's Favicon" height="25" />
+                <img src="images/mail.png" alt="Email SolLuna Essence" height="25" width="25" loading="lazy" />
               </a>
 
               <a
@@ -240,9 +250,11 @@
                 rel="noreferrer"
               >
                 <img
-                  src="/images/instagram.png"
-                  alt="Gmail's Favicon"
+                  src="images/instagram.png"
+                  alt="Follow SolLuna Essence on Instagram"
                   height="25"
+                  width="25"
+                  loading="lazy"
                 />
               </a>
             </div>
@@ -538,14 +550,16 @@
     </div>
 
     <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
     <!-- Owl Carousel-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" defer></script>
 
-    <script src="scripts/scripts.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({ duration: 2000 });
+    <script src="scripts/scripts.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <script defer>
+      window.addEventListener('load', function() {
+        AOS.init({ duration: 2000 });
+      });
     </script>
   </body>
 </html>

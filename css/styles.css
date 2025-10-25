@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=League+Gothic&family=Open+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Lato:wght@300;400&display=swap");
 *,
 *::after,
 *::before {
@@ -19,19 +19,16 @@ body {
   box-sizing: border-box;
   margin: 0;
   min-height: 100vh;
-  font-family: "Lato", sans-serif;
-  font-family: "League Gothic", sans-serif;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", "Lato", sans-serif; }
 
 img,
 picture {
   max-width: 100%;
   display: block; }
 
-/*@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300;400&display=swap");*/
 @font-face {
   font-family: "Gravity 1";
-  src: url("../../fonts/TTF/Gravity 1.ttf"), url("/fonts/TTF/Gravity 1.ttf"); }
+  src: url("../fonts/TTF/Gravity 1.ttf"); }
 
 ol,
 ul,
@@ -139,7 +136,7 @@ body {
 .logo-divider-1 {
   height: 10rem;
   width: 10rem;
-  background: url("../../images/logo.png") no-repeat;
+  background: url("../images/logo.png") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -153,7 +150,7 @@ body {
 .logo-divider-2 {
   height: 10rem;
   width: 10rem;
-  background: url("../../images/logo.png") no-repeat;
+  background: url("../images/logo.png") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -259,19 +256,19 @@ body {
   color: white; }
 
 .services__card:nth-child(1) {
-  background-image: url("../../images/tarot-background.jpg");
+  background-image: url("../images/tarot-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .services__card:nth-child(2) {
-  background-image: url("../../images/bioenergy-background.jpg");
+  background-image: url("../images/bioenergy-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .services__card:nth-child(3) {
-  background-image: url("../../images/kundalini-background.jpg");
+  background-image: url("../images/kundalini-background.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -401,7 +398,7 @@ blockquote::after {
 
 .header:after {
   content: "";
-  background: url("../../images/solluna-essence-logo.jpeg") no-repeat center center fixed;
+  background: url("../images/solluna-essence-logo.jpeg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -486,7 +483,7 @@ blockquote::after {
 
 .footer:after {
   content: "";
-  background: url("../../images/solluna-essence-logo.jpeg") no-repeat center center fixed;
+  background: url("../images/solluna-essence-logo.jpeg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
